@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitesh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5024ac877a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/PORTfolio.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Hitesh Agarwal</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+<!-- about part -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a final year under graduate student at <span>Amity university Rajasthan</span>.I am a <span>Full Stack Web Developer</span> and Competitive Coder . I have keen interest in Data Structures and Algorithms and implementing them in real life.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Frontend Development</span><br>Html, CSS, Javascript, Ajax, JQuery</li>
+                        <li><span>Backend development</span><br>Node, Express, PHP, sql</li>
+                        <li><span>DataBases</span><br>Mongodb, MySql</li>
+                        <li><span>Others</span><br>Figma, Canva, Adobe illustrator, Microsoft visio</li>
+                        <li><span>Data Structure and algorithm</span><br>C(programming language), C++, Java</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2022 - current</span><br>Making several Api's in node and express during the celebal and the yara films internship period</li>
+                        <li><span>2021 - 2023</span><br>Worked on the Api's and robust backend using php and MySql database in several Projects</li>
+                        <li><span>2021 - current</span><br>Making many of the freelancing and personal projects of frontend using Html , CSS and java script tech stack</li>
+                        <li><span>2020 - current</span><br>Solved more than 400 questions of Dsa on different platforms like code studio, leet code and geek for geeks</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2018</span><br>completed secondary education from rajasthan board with 83% marks</li>
+                        <li><span>2020</span><br>completed senior secondary education from rajasthan board with 68% marks</li>
+                        <li><span>2023</span><br>Currently final year under grad student pursuing bachelor's in Computer Science and engineering with CGPA of 7.8</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- services section -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"><span>Places </span> I've Worked</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Celebal Technologies</h2>
+                <p>Jun 2023 - Aug 2023 <br>
+                    <br>
+                    During my internship, I actively contributed to the development of an e-commerce website. I was responsible for implementing key features, enhancing user experience, and optimizing website performance. My tasks included backend development using technologies such as Node.js, express .js ensuring seamless integration with databases and web hosting</p>
+                <!-- <a href="#">Read more..</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Frolic Healthtech</h2>
+                <p>Feb 2023 - Oct 2023 <br>
+                    <br>
+                    As a backend API developer at Frolic HealthTech Pvt Ltd, I spearhead PHP and MySQL database development to empower our health technology solutions. I architect robust APIs, ensuring seamless communication between our applications and databases. My role involves optimizing database performance, implementing secure authentication mechanisms, and contributing to the scalability of our systems.</p>
+                <!-- <a href="#">Read more..</a> -->
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Learn and Build</h2>
+                <p>May 2022 - July 2022 & Jun 2023 - Aug 2023 <br>
+                    <br>
+                    During the internship at Learn and Build, I honed my skills in full-stack development and artificial intelligence. Collaborating on diverse projects, I contributed to both front-end and back-end solutions, gaining hands-on experience. This internship offered a dynamic learning environment, exposing me to cutting-edge technologies and fostering a passion for innovation.</p>
+                <!-- <a href="#">Read more..</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- portfolio/ myywork -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"><span>My </span>Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <h3>E commerce Website</h3>
+                    <p>In this e-commerce website project, I employed HTML, CSS, and JavaScript to create an intuitive and visually appealing user interface. Leveraging Node.js and Express in the backend, I implemented robust server-side functionalities, ensuring seamless interactions. The integration with MongoDB facilitated efficient data storage and retrieval, enhancing the website's scalability. </p>
+                    <a href="https://itshiteshagarwal.github.io/e-commerce/login.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>Frolic Health Website</h3>
+                    <p>Frolic Health Tech, a groundbreaking project, seamlessly integrates e-commerce and social media technologies using PHP and MySQL. Leveraging PHP for dynamic server-side functionalities and MySQL for efficient data management, our solution ensures a secure and scalable environment. The project's innovative fusion of e-commerce and social media technologies</p>
+                    <a href="https://frolichealth.in/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg">
+                <div class="layer">
+                    <h3>Udemy Clone Website</h3>
+                    <p>The Udemy Clone project, crafted with HTML, CSS, and JavaScript, mirrors the renowned e-learning platform's functionality. In the backend, PHP and MySQL synergize to provide a robust infrastructure for course management and user interactions. Through meticulous design and responsive front-end development, the clone replicates Udemy's user-friendly interface. The backend architecture, powered by PHP and MySQL, supports secure user authentication, dynamic course content delivery, and effective database management</p>
+                    <a href="https://operating-typist.000webhostapp.com/index.php"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- contact form -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"><span>Contact </span>Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>agarwalhitesh551@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9887271205</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://wa.me/9887271205?text=Hello"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/__agarwalhitesh/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/hitesh-agarwal-350830223/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="images/personal.pdf" download class="btn btn2">Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                    <input type="email" name="Email" placeholder="Enter your email" required>
+                    <textarea name="Message" rows="6" placeholder="Enter your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Designed and made with <i class="fa-solid fa-heart"></i>  Hitesh Agarwal @ 2023</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbwLa9OJtlGgjesIGRzgZC_Rr7xua5GQ05WAtnMt129ExjxR3MCDiqLDxjjQFrD5ixe1Sg/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message send successfully, thank you for your query"
+            setTimeout(function(){
+                msg.innerHTML = " "
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
